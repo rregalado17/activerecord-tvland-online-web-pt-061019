@@ -4,8 +4,8 @@ class Show < ActiveRecord::Base
   
   def actors_list
 
-    self.actors.full_name.collect do |t|
-      t.name
+    self.actors.collect do |t|
+      t.full_name
     end
   end
 end
